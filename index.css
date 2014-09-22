@@ -1,0 +1,67 @@
+html,body{
+    height:100%;
+}
+
+
+
+
+
+.navbar-inverse .navbar-nav{
+
+  font-family: "Museo Sans", "Lucida Grande", sans-serif;
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  letter-spacing: 1px
+}
+.jumbotron {
+  background-image:url('http://goo.gl/dzpUmD'); /*Photo taken from 
+  http://www.internationalaccommodation.com/GlobalImages/Articles/ItalianCountryVillas.jpg */
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  /*-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color:black;*/
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+}
+
+
+.text_body{
+  margin-bottom: 10px;
+  height: 200px;
+  background-color: #f7f7f7;
+}
+
+.text_body h1{
+  color: #1876DB;
+  font-family: 'Shift', sans-serif;
+}
+
+.btn.btn-small{
+
+  text-transform:uppercase;
+  font-size:0.8em;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+.mainContent{
+  min-height: 400px;
+}
