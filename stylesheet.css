@@ -1,0 +1,48 @@
+.container{
+	border-bottom: 4px solid #c0392b;
+	position:relative;
+	background-color: #CC9900;
+}
+
+.contact{
+	position:relative;
+	border-top: 4px solid #c0392b;
+	background-color: #CC9900;
+}
+
+a{display: block;}
+
+#content {
+	position:relative;
+	margin-top: 100px;
+}
+
+.page{
+	
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	padding: 25px;
+	border: 25px solid navy;
+	
+}
+
+.title{
+	margin-left:auto;
+	margin-right:auto;
+	
+	width: 70%;
+	border-bottom: 4px solid #c0392b;
+}
+
+.body{
+	display:inline-block;
+	float:left;
+}
+
+
+.caption{
+	display:inline-block;
+	float:left;
+}

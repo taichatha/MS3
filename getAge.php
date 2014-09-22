@@ -7,6 +7,6 @@
   $today = new DateTime("now");
   $interval = date_diff($birthday, $today);
   $age = $interval->format('%a days');
-  echo "You are $age old";
+  echo "Your email has been sent";
 
 ?>

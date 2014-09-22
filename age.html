@@ -1,73 +1,56 @@
 <!DOCTYPE html>
-<html><head>
-  <title>My Awesome Age Calculator!</title>
+
+<html>
+<head>
+  <title>Contact</title>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link href = "css/bootstrap.css" rel = "stylesheet">
                 
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script>
-    $("document").ready(function() {
-
+  $(document).ready(function() {
       $("#getage").click(function() {
-
-        $.ajax({
-          url: 'getAge.php',
-          data: {yourname: $( "#yourname" ).val(), year: $("#year").val(), month: $("#month").val(), day: $("#day").val()},
-          success: function(tomhorton) {
-            $("#results").html(tomhorton);
-          }
-        });
-
+          
+          $.ajax({
+              url: 'getAge.php',
+              data: {yourname: $( "#yourname" ).val(), year: $("#year").val(), month: $("#month").val(), day: $("#day").val()},
+              success: function(data){
+                  $('#results').html(data);   
+              }
+          });
       });
-
-    });
-
-
+  });
   </script>
-  
-<style type="text/css"></style><style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
-.en-markup-crop-options {
-    top: 18px !important;
-    left: 50% !important;
-    margin-left: -90px !important;
-    width: 180px !important;
-    border: 2px rgba(255,255,255,.38) solid !important;
-    border-radius: 4px !important;
-}
-
-.en-markup-crop-options div div:first-of-type {
-    margin-left: 0px !important;
-}
-</style></head>
+</head>
 
 <body role="document">
 
 <div class="container theme-showcase" role="main">
 
   <div class="jumbotron">
-  <h1>My Awesome Age Calculator!</h1>
+  <h1>Contact</h1>
   
     <div class="form-group">
       <label for="yourname">Name</label>
       <input type="text" class="form-control" id="yourname" name="yourname" placeholder="ex. Bob Smith">
     </div>
     <div class="form-group">
-      <label for="year">Year</label>
-      <input type="text" class="form-control" id="year" name="year" placeholder="ex. 1979">
-      <label for="month">Month</label>
-      <input type="text" class="form-control" id="month" name="month" placeholder="ex. 11 for November">
-      <label for="day">Day</label>
-      <input type="text" class="form-control" id="day" name="day" placeholder="ex. 9">
+      <label for="yourEmail">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
     </div>
-    
+    <div class="form-group">
+      <label for="yourMessage">Message</label>
+      <textarea class="form-control" rows="5"></textarea>
+    </div>
     <button type="button" class="btn btn-default" id="getage">Submit</button>
   
-  <div id="results">Your age is:</div>
+  <div id="results"></div>
   </div>
 
 
 </div>
 
+</body>
 
-
-</body></html>
+</html>
