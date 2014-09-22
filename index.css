@@ -20,6 +20,7 @@ html,body{
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom:0px;
 }
 
 .jumbotron .container {
